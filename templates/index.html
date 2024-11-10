@@ -180,7 +180,7 @@
 </head>
 <body>
     <div class="container">
-        <h2>Office Registration</h2>
+        <h2>Register Log</h2>
         <form action="{{ url_for('log_entry') }}" method="POST" id="registrationForm">
             <div class="input-group">
                 <i class="fas fa-user"></i>
@@ -194,6 +194,7 @@
                        inputmode="numeric" autocomplete="tel"
                        title="Please enter a valid 10-digit phone number">
             </div>
+            <span style = "margin-left: 8%; opacity: 0.6; font-size: 0.8em;">(Please enter a valid 10-digit phone number)</span>
             <div class="button-group">
                 <button type="submit" name="action" value="entry">
                     <i class="fas fa-sign-in-alt"></i> Entry
